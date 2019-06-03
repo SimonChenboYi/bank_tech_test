@@ -33,3 +33,19 @@ I want to print the bank statement with transaction history in reverse chronolog
 
 
 ![Image from iOS](https://user-images.githubusercontent.com/47269063/58797329-a7ca9a80-85f7-11e9-8ba8-f4ce39917d84.jpg)
+
+# Feature Tests
+  ### Test Part 1 : run the tests in './spec/FeatureTests'
+
+  ### Run the ```irb``` in terminal
+
+
+*User Story 1*
+
+```
+2.6.0 :001 > require './lib/bank.rb'
+ => true
+2.6.0 :002 > account = Bank.new
+ => #<Bank:0x00007fe6480f9d68>
+2.6.0 :003 >
+```
