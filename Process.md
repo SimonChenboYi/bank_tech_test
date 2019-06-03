@@ -61,3 +61,15 @@ I want to print the bank statement with transaction history in reverse chronolog
  => 0.0
 2.6.0 :004 >
 ```
+
+*User Story 3*
+```
+2.6.0 :001 > require './lib/bank.rb'
+ => true
+2.6.0 :002 > account = Bank.new
+ => #<Bank:0x00007fdcb810d4b0 @balance=0.0>
+2.6.0 :003 > account.deposit(100)
+ => 100.0
+2.6.0 :004 > account.deposit(32.15)
+ => 132.15
+```
