@@ -129,3 +129,28 @@ I want to print the bank statement with transaction history in reverse chronolog
 
  => [{:date=>"03/06/2019", :type=>"deposit", :balance=>100.0}, {:date=>"03/06/2019", :type=>"withdraw", :balance=>80.0}]
 ```
+
+*User Story 7*
+```
+2.6.0 :001 > require './lib/bank.rb'
+ => true
+
+2.6.0 :002 > account = Bank.new
+ => #<Bank:0x00007fcb3b848d08 @balance=0.0, @transaction=#<Transaction:0x00007fcb3b848cb8 @transaction_time="", @transaction_log=[]>,
+ @printer=#<Printer:0x00007fcb3b848c68 @transaction=#<Transaction:0x00007fcb3b848cb8 @transaction_time="", @transaction_log=[]>, @sta
+tment="date || credit || debit || balance\n">>
+2.6.0 :003 > account.deposit(100.00)
+ => 100.0
+2.6.0 :004 > account.deposit(200.00)
+ => 300.0
+2.6.0 :005 > account.withdraw(20.00)
+ => 280.0
+2.6.0 :006 > statement = account.print_bankstatement
+ => "date || credit || debit || balance\n03/06/2019 || || 20.00 || 280.00\n03/06/2019 || 200.00 || || 300.00\n03/06/2019 || 100.00 ||
+ || 100.00"
+2.6.0 :007 > print statement
+date || credit || debit || balance
+03/06/2019 || || 20.00 || 280.00
+03/06/2019 || 200.00 || || 300.00
+03/06/2019 || 100.00 || || 100.00 => nil
+```
