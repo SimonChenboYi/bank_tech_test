@@ -25,4 +25,11 @@ I want to record the type of the transition (deposit or withdrawal)
 
 7. As a user
 So I can manage my finance
-I want to print the bank statement  with transaction history in reverse chronological order. 
+I want to print the bank statement with transaction history in reverse chronological order.
+
+
+# Modelling Classes
+*Using CRC Card to model the Classes*
+
+
+![Image from iOS](https://user-images.githubusercontent.com/47269063/58797329-a7ca9a80-85f7-11e9-8ba8-f4ce39917d84.jpg)
