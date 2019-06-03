@@ -4,7 +4,7 @@ require 'bank'
 
 describe Bank do
   describe '#initialize' do
-    it 'create an count' do
+    it 'create an account' do
       expect(subject).to be_an_instance_of(Bank)
     end
   end
