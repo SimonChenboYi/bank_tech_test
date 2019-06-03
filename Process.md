@@ -35,8 +35,7 @@ I want to print the bank statement with transaction history in reverse chronolog
 ![Image from iOS](https://user-images.githubusercontent.com/47269063/58797329-a7ca9a80-85f7-11e9-8ba8-f4ce39917d84.jpg)
 
 * updated version
-![image](https://user-images.githubusercontent.com/47269063/58832953-f3a53000-8647-11e9-9e84-af7e546df9dd.png)
-
+![image](https://user-images.githubusercontent.com/47269063/58835141-0ec66e80-864d-11e9-9a93-cadfe47434b3.png)
 
 # Technical Approach
 

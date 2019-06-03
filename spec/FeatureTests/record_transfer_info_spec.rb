@@ -10,6 +10,7 @@ describe 'record transaction info' do
     date = Time.now.strftime('%d/%m/%Y')
     expect(account.transaction.transaction_info).to eq(date: date,
                                                        type: 'deposit',
+                                                       amount: 100.00,
                                                        balance: 100.00)
   end
 
@@ -19,6 +20,7 @@ describe 'record transaction info' do
     date = Time.now.strftime('%d/%m/%Y')
     expect(account.transaction.transaction_info).to eq(date: date,
                                                        type: 'withdraw',
+                                                       amount: 20.00,
                                                        balance: 80.00)
   end
 end

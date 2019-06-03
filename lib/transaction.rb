@@ -9,10 +9,11 @@ class Transaction
     @transaction_log = []
   end
 
-  def transfer(transaction_type, balaence)
+  def transfer(transaction_type, amount, balaence)
     @transaction_time = Time.now.strftime('%d/%m/%Y')
     @transaction_info = { date: @transaction_time,
                           type: transaction_type,
+                          amount: amount,
                           balance: balaence }
 
     @transaction_log.push(@transaction_info)

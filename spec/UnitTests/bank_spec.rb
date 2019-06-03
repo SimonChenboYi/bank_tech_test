@@ -4,7 +4,7 @@ require 'bank'
 
 describe Bank do
   let(:transaction_double) { double :transaction, transfer: 'transfer done' }
-  let(:printer_double) { double :printer, bank_statement: 'bank statement' }
+  let(:printer_double) { double :printer, print_statement: 'bank statement' }
   let(:printer_class_double) { double :printer_class, new: printer_double }
   subject { Bank.new(transaction_double, printer_class_double) }
 
@@ -54,7 +54,7 @@ describe Bank do
 
   describe '#print_statment' do
     it 'print the bank statement' do
-      expect(printer_double).to receive(:bank_statement)
+      expect(printer_double).to receive(:print_statement)
       subject.print_bankstatement
     end
   end
