@@ -5,7 +5,7 @@ require 'bank'
 describe 'create account' do
   account = Bank.new
 
-  it 'initialize an account for user' do
+  xit 'initialize an account for user' do
     expect(account).to be_an_instance_of(Bank)
   end
 end

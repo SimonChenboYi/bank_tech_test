@@ -22,6 +22,19 @@
         1,
         null
       ],
+      "/Users/simonyi/Projects/week-10/bank_tech_test/spec/FeatureTests/show_blance_spec.rb": [
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/simonyi/Projects/week-10/bank_tech_test/spec/UnitTests/bank_spec.rb": [
         null,
         null,
@@ -36,6 +49,6 @@
         null
       ]
     },
-    "timestamp": 1559568537
+    "timestamp": 1559569633
   }
 }
