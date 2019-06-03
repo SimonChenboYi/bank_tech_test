@@ -2,7 +2,7 @@
 
 require 'bank'
 
-describe 'withdraw' do
+describe 'record transaction time' do
   let(:account) { Bank.new }
 
   it 'log the transaction time when deposit' do

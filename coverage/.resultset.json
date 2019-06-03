@@ -79,6 +79,32 @@
         null,
         null
       ],
+      "/Users/simonyi/Projects/week-10/bank_tech_test/spec/FeatureTests/record_transfer_info_spec.rb": [
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/simonyi/Projects/week-10/bank_tech_test/spec/FeatureTests/show_blance_spec.rb": [
         null,
         null,
@@ -197,6 +223,6 @@
         null
       ]
     },
-    "timestamp": 1559580329
+    "timestamp": 1559581669
   }
 }
