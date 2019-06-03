@@ -4,7 +4,9 @@ require 'bank'
 
 describe Bank do
   let(:transaction_double) { double :transaction, transfer: 'transfer done' }
-  subject { Bank.new(transaction_double) }
+  let(:printer_double) { double :printer, bank_statement: 'bank statement' }
+  let(:printer_class_double) { double :printer_class, new: printer_double }
+  subject { Bank.new(transaction_double, printer_class_double) }
 
   describe '#initialize' do
     it 'create an account' do
@@ -47,6 +49,13 @@ describe Bank do
       subject.deposit(100.00)
       expect(transaction_double).to receive(:transfer)
       subject.withdraw(20.00)
+    end
+  end
+
+  describe '#print_statment' do
+    it 'print the bank statement' do
+      expect(printer_double).to receive(:bank_statement)
+      subject.print_bankstatement
     end
   end
 end

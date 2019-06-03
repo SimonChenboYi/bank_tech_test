@@ -31,8 +31,19 @@ I want to print the bank statement with transaction history in reverse chronolog
 # Modelling Classes
 *Using CRC Card to model the Classes*
 
-
+* first version
 ![Image from iOS](https://user-images.githubusercontent.com/47269063/58797329-a7ca9a80-85f7-11e9-8ba8-f4ce39917d84.jpg)
+
+* updated version
+![image](https://user-images.githubusercontent.com/47269063/58832953-f3a53000-8647-11e9-9e84-af7e546df9dd.png)
+
+
+# Technical Approach
+
+* Bank class is responsible of the behaviours regarding to account/balance
+* Transaction class is responsible of record and log the transaction, and to be injected into Bank class and Print class
+* Print class is responsible of display of bank statement and needs the input from transaction class and to be injected to Bank class
+
 
 # Feature Tests
   ### Test Part 1 : run the tests in './spec/FeatureTests'
@@ -49,7 +60,6 @@ I want to print the bank statement with transaction history in reverse chronolog
  => #<Bank:0x00007fe6480f9d68>
 2.6.0 :003 >
 ```
-
 
 *User Story 2*
 ```
