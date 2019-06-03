@@ -7,4 +7,9 @@ class Bank
   def initialize
     @balance = 0.00
   end
+
+  def deposit(deposit_amount)
+    @balance += deposit_amount
+    balance
+  end
 end
