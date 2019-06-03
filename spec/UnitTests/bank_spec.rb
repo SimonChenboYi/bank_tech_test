@@ -16,7 +16,7 @@ describe Bank do
   end
 
   describe '#deposit' do
-    it 'increase the balance after creating account' do
+    it 'can deposit after creating account' do
       subject.deposit(20.50)
       expect(subject.balance).to eq 20.50
     end
@@ -25,6 +25,14 @@ describe Bank do
       subject.deposit(20.50)
       subject.deposit(10.50)
       expect(subject.balance).to eq 31.00
+    end
+  end
+
+  describe '#withdraw' do
+    it 'decrease the balance from current balance' do
+      subject.deposit(100.00)
+      subject.withdraw(20.00)
+      expect(subject.balance).to eq 80.00
     end
   end
 end
