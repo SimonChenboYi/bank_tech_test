@@ -86,7 +86,7 @@ I want to print the bank statement with transaction history in reverse chronolog
  => 80.0
 ```
 
-*User Story 4*
+*User Story 5*
 ```
 2.6.0 :001 > require './lib/bank.rb'
  => true
@@ -99,4 +99,24 @@ I want to print the bank statement with transaction history in reverse chronolog
  => 80.0
 2.6.0 :005 > account.transaction.transaction_log
  => ["03/06/2019", "03/06/2019"]
+```
+
+*User Story 6*
+```
+2.6.0 :001 > require './lib/bank.rb'
+ => true
+2.6.0 :002 > account = Bank.new
+ => #<Bank:0x00007fc9ac91ab90 @balance=0.0, @transaction=#<Transaction:0x00007fc9ac91ab68 @transaction_time="", @transaction_log=[]>>
+
+2.6.0 :003 > account.deposit(100.00)
+ => 100.0
+2.6.0 :004 > account.transaction.transaction_info
+ => {:date=>"03/06/2019", :type=>"deposit", :balance=>100.0}
+2.6.0 :005 > account.withdraw(20.00)
+ => 80.0
+2.6.0 :006 > account.transaction.transaction_info
+ => {:date=>"03/06/2019", :type=>"withdraw", :balance=>80.0}
+2.6.0 :007 > account.transaction.transaction_log
+
+ => [{:date=>"03/06/2019", :type=>"deposit", :balance=>100.0}, {:date=>"03/06/2019", :type=>"withdraw", :balance=>80.0}]
 ```

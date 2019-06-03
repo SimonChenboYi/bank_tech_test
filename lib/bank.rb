@@ -13,13 +13,13 @@ class Bank
 
   def deposit(deposit_amount)
     @balance += deposit_amount
-    @transaction.transfer
+    @transaction.transfer('deposit', balance)
     balance
   end
 
   def withdraw(withdrawal_amount)
     @balance -= withdrawal_amount
-    @transaction.transfer
+    @transaction.transfer('withdraw', balance)
     balance
   end
 end

@@ -5,20 +5,20 @@ require 'bank'
 describe 'record transaction info' do
   let(:account) { Bank.new }
 
-  xit 'log the transaction info when deposit' do
+  it 'record the transaction info when deposit' do
     account.deposit(100.00)
     date = Time.now.strftime('%d/%m/%Y')
-    expect(account.transaction.info).to eq(date: date,
-                                           type: 'deposit',
-                                           balance: 100.00)
+    expect(account.transaction.transaction_info).to eq(date: date,
+                                                       type: 'deposit',
+                                                       balance: 100.00)
   end
 
-  xit 'log the transaction info when withdrawal' do
+  it 'record the transaction info when withdrawal' do
     account.deposit(100.00)
     account.withdraw(20.00)
     date = Time.now.strftime('%d/%m/%Y')
-    expect(account.transaction.transaction.info).to eq eq(date: date,
-                                                          type: 'withdraw',
-                                                          balance: 80.00)
+    expect(account.transaction.transaction_info).to eq(date: date,
+                                                       type: 'withdraw',
+                                                       balance: 80.00)
   end
 end
