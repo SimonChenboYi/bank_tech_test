@@ -5,16 +5,16 @@ require 'bank'
 describe 'withdraw' do
   let(:account) { Bank.new }
 
-  xit 'log the transaction time when deposit' do
+  it 'log the transaction time when deposit' do
     account.deposit(100.00)
-    date = Time.now.strftime('%m/%d/%Y')
-    expect(account.transaction.time).to eq date
+    date = Time.now.strftime('%d/%m/%Y')
+    expect(account.transaction.transaction_time).to eq date
   end
 
-  xit 'log the transaction time when withdrawal' do
+  it 'log the transaction time when withdrawal' do
     account.deposit(100.00)
     account.withdraw(20.00)
-    date = Time.now.strftime('%m/%d/%Y')
-    expect(account.transaction.time).to eq date
+    date = Time.now.strftime('%d/%m/%Y')
+    expect(account.transaction.transaction_time).to eq date
   end
 end
