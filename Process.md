@@ -17,11 +17,11 @@ I wan to see the right deduction of my balance by withdrawal
 
 5. As a user
 So I can manage my finance
-I want to record the date of each transition
+I want to record the date of each transaction
 
 6. As a user
 So I can manage my finance
-I want to record the type of the transition (deposit or withdrawal)
+I want to record the type of the transaction (deposit or withdrawal)
 
 7. As a user
 So I can manage my finance
