@@ -9,24 +9,22 @@ class Printer
 
   def print_statement
     @transaction.transaction_log.reverse_each do |info|
-      @statment += print_line(info)
+      balance = format('%.2f', info[:balance])
+      @statment += info[:date] + optional_row_part(info) + balance + "\n"
     end
     @statment = @statment.chomp
   end
 
   private
 
-  def print_line(info)
-    line = info[:date]
+  def optional_row_part(info)
+    optional_part = ''
     amount = format('%.2f', info[:amount])
-    balance = format('%.2f', info[:balance])
-
     if info[:type] == 'deposit'
-      line += ' || ' + amount + ' || || '
+      optional_part += ' || ' + amount + ' || || '
     elsif info[:type] == 'withdraw'
-      line += ' || || ' + amount + ' || '
+      optional_part += ' || || ' + amount + ' || '
     end
-    line + balance + "\n"
+    optional_part
   end
-
 end

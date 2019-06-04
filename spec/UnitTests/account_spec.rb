@@ -3,7 +3,7 @@
 require 'account'
 
 describe Account do
-  let(:transaction_double) { double :transaction, transfer: 'transfer done' }
+  let(:transaction_double) { double :transaction, record_transaction: 'record_transaction done' }
   let(:printer_double) { double :printer, print_statement: 'bank statement' }
   let(:printer_class_double) { double :printer_class, new: printer_double }
   subject { Account.new(transaction_double, printer_class_double) }
@@ -32,8 +32,8 @@ describe Account do
       expect(subject.balance).to eq 31.00
     end
 
-    it 'call the transaction transfer method when deposit' do
-      expect(transaction_double).to receive(:transfer)
+    it 'call the transaction record_transaction method when deposit' do
+      expect(transaction_double).to receive(:record_transaction)
       subject.deposit(100.00)
     end
   end
@@ -45,9 +45,9 @@ describe Account do
       expect(subject.balance).to eq 80.00
     end
 
-    it 'call the transaction transfer method when withdraw' do
+    it 'call the transaction record_transaction method when withdraw' do
       subject.deposit(100.00)
-      expect(transaction_double).to receive(:transfer)
+      expect(transaction_double).to receive(:record_transaction)
       subject.withdraw(20.00)
     end
   end
