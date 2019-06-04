@@ -9,11 +9,11 @@ I want to able to see my balance in my account
 
 3. As a user
 So I can manage my finance
-I want to increase my balance by put deposit in to my account
+I want to increase my balance by put deposit into my account
 
 4. As a user
 So I can manage my finance
-I wan to see the right deduction of my balance by withdrawal
+I wan to see the right deduction of my balance after withdrawal
 
 5. As a user
 So I can manage my finance
@@ -21,7 +21,8 @@ I want to record the date of each transaction
 
 6. As a user
 So I can manage my finance
-I want to record the type of the transaction (deposit or withdrawal)
+I want to record the information of the transaction (time, type, amount, balance)
+
 
 7. As a user
 So I can manage my finance
@@ -35,7 +36,7 @@ I want to print the bank statement with transaction history in reverse chronolog
 ![Image from iOS](https://user-images.githubusercontent.com/47269063/58797329-a7ca9a80-85f7-11e9-8ba8-f4ce39917d84.jpg)
 
 * updated version
-![image](https://user-images.githubusercontent.com/47269063/58835141-0ec66e80-864d-11e9-9a93-cadfe47434b3.png)
+![Screenshot 2019-06-04 at 11 56 40](https://user-images.githubusercontent.com/47269063/58874140-e4fa5f80-86bf-11e9-8adf-73c067097eaf.png)
 
 # Technical Approach
 
@@ -45,7 +46,7 @@ I want to print the bank statement with transaction history in reverse chronolog
 
 
 # Feature Tests
-  ### Test Part 1 : run the tests in './spec/FeatureTests'
+  ### Test Part 1 : run the tests in './spec/FeatureTests/
 
   ### Run the ```irb``` in terminal
 
