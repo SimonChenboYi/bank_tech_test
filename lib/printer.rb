@@ -20,11 +20,8 @@ class Printer
   def optional_row_part(info)
     optional_part = ''
     amount = format('%.2f', info[:amount])
-    if info[:type] == 'deposit'
-      optional_part += ' || ' + amount + ' || || '
-    elsif info[:type] == 'withdraw'
-      optional_part += ' || || ' + amount + ' || '
-    end
+    optional_part += ' || ' + amount + ' || || ' if info[:type] == 'deposit'
+    optional_part += ' || || ' + amount + ' || ' if info[:type] == 'withdraw'
     optional_part
   end
 end
