@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-require 'bank'
+require 'account'
 
-describe Bank do
+describe Account do
   let(:transaction_double) { double :transaction, transfer: 'transfer done' }
   let(:printer_double) { double :printer, print_statement: 'bank statement' }
   let(:printer_class_double) { double :printer_class, new: printer_double }
-  subject { Bank.new(transaction_double, printer_class_double) }
+  subject { Account.new(transaction_double, printer_class_double) }
 
   describe '#initialize' do
     it 'create an account' do
-      expect(subject).to be_an_instance_of(Bank)
+      expect(subject).to be_an_instance_of(Account)
     end
   end
 

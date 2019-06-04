@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require 'bank'
+require 'account'
 
 describe 'record transaction time' do
-  let(:account) { Bank.new }
+  let(:account) { Account.new }
 
   it 'log the transaction time when deposit' do
     account.deposit(100.00)

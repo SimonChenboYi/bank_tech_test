@@ -3,8 +3,8 @@
 require './lib/transaction'
 require './lib/printer'
 
-# Bank class to instanciate bank account
-class Bank
+# Account class to instanciate bank account and conduct transactions
+class Account
   attr_reader :balance, :transaction, :printer
 
   def initialize(transaction = Transaction.new, printer_class = Printer)

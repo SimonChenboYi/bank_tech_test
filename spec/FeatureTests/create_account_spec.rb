@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require 'bank'
+require 'account'
 
 describe 'create account' do
-  let(:account) { Bank.new }
+  let(:account) { Account.new }
 
   it 'initialize an account for user' do
-    expect(account).to be_an_instance_of(Bank)
+    expect(account).to be_an_instance_of(Account)
   end
 end

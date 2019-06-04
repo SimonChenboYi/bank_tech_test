@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require 'bank'
+require 'account'
 
 describe 'withdraw' do
-  let(:account) { Bank.new }
+  let(:account) { Account.new }
 
   it 'decrease the account balance by withdrawal' do
     account.deposit(100.00)

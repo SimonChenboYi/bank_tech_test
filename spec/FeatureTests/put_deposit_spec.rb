@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require 'bank'
+require 'account'
 
 describe 'deposit' do
-  let(:account) { Bank.new }
+  let(:account) { Account.new }
 
   it 'increase the account balance by put deposit' do
     account.deposit(60.50)

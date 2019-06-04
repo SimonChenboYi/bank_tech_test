@@ -14,7 +14,7 @@
         null,
         null
       ],
-      "/Users/simonyi/Projects/week-10/bank_tech_test/lib/bank.rb": [
+      "/Users/simonyi/Projects/week-10/bank_tech_test/lib/account.rb": [
         null,
         null,
         1,
@@ -227,7 +227,7 @@
         null,
         null
       ],
-      "/Users/simonyi/Projects/week-10/bank_tech_test/spec/UnitTests/bank_spec.rb": [
+      "/Users/simonyi/Projects/week-10/bank_tech_test/spec/UnitTests/account_spec.rb": [
         null,
         null,
         1,
@@ -375,6 +375,6 @@
         null
       ]
     },
-    "timestamp": 1559600748
+    "timestamp": 1559638610
   }
 }

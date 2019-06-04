@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require 'bank'
+require 'account'
 
 describe 'print the Bank Statment' do
-  let(:account) { Bank.new }
+  let(:account) { Account.new }
 
   it 'print the bank statment with transaction history in reverse order' do
     date = Time.now.strftime('%d/%m/%Y')
