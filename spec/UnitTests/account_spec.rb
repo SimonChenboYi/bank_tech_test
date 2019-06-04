@@ -43,6 +43,10 @@ describe Account do
       expect(subject.balance).to eq 80.00
     end
 
+    it 'raise error if balance is not enough' do
+      expect { subject.withdraw(20.00) }.to raise_error('Balance not enough!')
+    end
+
     it 'call the transaction record_transaction method when withdraw' do
       subject.deposit(100.00)
       expect(transaction_double).to receive(:record_transaction)

@@ -20,6 +20,8 @@ class Account
   end
 
   def withdraw(withdrawal_amount)
+    raise 'Balance not enough!' if @balance < withdrawal_amount
+
     @balance -= withdrawal_amount
     @transaction.record_transaction('withdraw', withdrawal_amount, balance)
     balance
