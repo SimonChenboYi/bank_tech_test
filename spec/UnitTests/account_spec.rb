@@ -3,7 +3,7 @@
 require 'account'
 
 describe Account do
-  let(:transaction_double) { double :transaction, record_transaction: 'record_transaction done' }
+  let(:transaction_double) { double :transaction, record_transaction: 'record' }
   let(:printer_double) { double :printer, print_statement: 'bank statement' }
   let(:printer_class_double) { double :printer_class, new: printer_double }
   subject { Account.new(transaction_double, printer_class_double) }
@@ -27,9 +27,8 @@ describe Account do
     end
 
     it 'increase the balance on top existing balance' do
-      subject.deposit(20.50)
-      subject.deposit(10.50)
-      expect(subject.balance).to eq 31.00
+      deposit_twice(subject)
+      expect(subject.balance).to eq 70.50
     end
 
     it 'call the transaction record_transaction method when deposit' do
@@ -40,8 +39,7 @@ describe Account do
 
   describe '#withdraw' do
     it 'decrease the balance from current balance' do
-      subject.deposit(100.00)
-      subject.withdraw(20.00)
+      deposit_then_withdraw(subject)
       expect(subject.balance).to eq 80.00
     end
 

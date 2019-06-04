@@ -7,8 +7,7 @@ describe 'print the Bank Statment' do
 
   it 'print the bank statment with transaction history in reverse order' do
     date = Time.now.strftime('%d/%m/%Y')
-    account.deposit(100.00)
-    account.withdraw(20.00)
+    deposit_then_withdraw(account)
     expect(account.print_bankstatement).to eq(
       "date || credit || debit || balance\n#{date} || || 20.00 || 80.00\n" \
       "#{date} || 100.00 || || 100.00"

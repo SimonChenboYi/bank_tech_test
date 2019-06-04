@@ -6,8 +6,7 @@ describe 'withdraw' do
   let(:account) { Account.new }
 
   it 'decrease the account balance by withdrawal' do
-    account.deposit(100.00)
-    account.withdraw(20.00)
+    deposit_then_withdraw(account)
     expect(account.balance).to eq 80.00
   end
 end

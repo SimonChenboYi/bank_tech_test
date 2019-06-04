@@ -15,8 +15,7 @@ describe 'record transaction info' do
   end
 
   it 'record the transaction info when withdrawal' do
-    account.deposit(100.00)
-    account.withdraw(20.00)
+    deposit_then_withdraw(account)
     date = Time.now.strftime('%d/%m/%Y')
     expect(account.transaction.transaction_info).to eq(date: date,
                                                        type: 'withdraw',

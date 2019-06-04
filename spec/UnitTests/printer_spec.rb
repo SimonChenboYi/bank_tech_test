@@ -32,7 +32,8 @@ describe Printer do
     it 'print the transaction log in reverser order' do
       printer = Printer.new(transaction2)
       expect(printer.print_statement).to eq(
-        "date || credit || debit || balance\n04/06/2019 || || 20.00 || 80.00\n03/06/2019 || 100.00 || || 100.00"
+        "date || credit || debit || balance\n" \
+        "04/06/2019 || || 20.00 || 80.00\n03/06/2019 || 100.00 || || 100.00"
       )
     end
   end

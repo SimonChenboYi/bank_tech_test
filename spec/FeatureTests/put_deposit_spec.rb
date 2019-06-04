@@ -11,8 +11,7 @@ describe 'deposit' do
   end
 
   it 'increase the account balance by put deposit' do
-    account.deposit(60.50)
-    account.deposit(10.00)
+    deposit_twice(account)
     expect(account.balance).to eq 70.50
   end
 end
