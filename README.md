@@ -107,8 +107,9 @@ CRC is used to model the classes and their relation:
 
 ![Screenshot 2019-06-04 at 11 56 40](https://user-images.githubusercontent.com/47269063/58874140-e4fa5f80-86bf-11e9-8adf-73c067097eaf.png)
 
-
-
+* Account class to instantiate bank account to conduct transactions
+* Transaction class to  record/log the transactions
+* Printer class to generate/display the bank statement 
 
 ## Screenshot of Running the Application
 <img width="1036" alt="Screenshot 2019-06-04 at 12 31 08" src="https://user-images.githubusercontent.com/47269063/58875990-c9de1e80-86c4-11e9-980f-2d6dfa06d67b.png">

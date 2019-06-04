@@ -3,7 +3,7 @@
 require './lib/transaction'
 require './lib/printer'
 
-# Account class to instanciate bank account and conduct transactions
+# Account class to instantiate bank account and conduct transactions
 class Account
   attr_reader :balance, :transaction, :printer
 
