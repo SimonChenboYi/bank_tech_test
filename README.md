@@ -72,33 +72,33 @@ Agile programming is adopted in the development. Based on the requirements form 
 The acceptance criteria example from the requirements (more details in Requirement.md ) is feature tested in  './spec/print_statement_spec.rb'
 
 ### User Stories.   
-1. As a user
-So I can manage my finance
-I want to create an bank account from a bank
+1. As a user.    
+So I can manage my finance.    
+I want to create an bank account from a bank.    
 
-2. As a user
-So I can manage my finance
-I want to able to see my balance in my account
+2. As a user.  
+So I can manage my finance.  
+I want to able to see my balance in my account.  
 
-3. As a user
-So I can manage my finance
-I want to increase my balance by put deposit into my account
+3. As a user.
+So I can manage my finance.
+I want to increase my balance by put deposit into my account.
 
-4. As a user
-So I can manage my finance
-I wan to see the right deduction of my balance after withdrawal
+4. As a user.  
+So I can manage my finance.  
+I wan to see the right deduction of my balance after withdrawal.  
 
-5. As a user
-So I can manage my finance
-I want to record the date of each transaction
+5. As a user.  
+So I can manage my finance.  
+I want to record the date of each transaction.  
 
-6. As a user
-So I can manage my finance
-I want to record the information of each transaction (time, type, amount, balance)
+6. As a user.  
+So I can manage my finance.  
+I want to record the information of each transaction (time, type, amount, balance).  
 
-7. As a user
-So I can manage my finance
-I want to print the bank statement with transaction history in reverse chronological order.
+7. As a user.  
+So I can manage my finance.  
+I want to print the bank statement with transaction history in reverse chronological order.  
 
 
 ### CRC
@@ -109,7 +109,7 @@ CRC is used to model the classes and their relation:
 
 * Account class to instantiate bank account to conduct transactions
 * Transaction class to  record/log the transactions
-* Printer class to generate/display the bank statement 
+* Printer class to generate/display the bank statement
 
 ## Screenshot of Running the Application
 <img width="1036" alt="Screenshot 2019-06-04 at 12 31 08" src="https://user-images.githubusercontent.com/47269063/58875990-c9de1e80-86c4-11e9-980f-2d6dfa06d67b.png">
