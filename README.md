@@ -80,9 +80,9 @@ I want to create an bank account from a bank.
 So I can manage my finance.  
 I want to able to see my balance in my account.  
 
-3. As a user.
-So I can manage my finance.
-I want to increase my balance by put deposit into my account.
+3. As a user.  
+So I can manage my finance.  
+I want to increase my balance by put deposit into my account.  
 
 4. As a user.  
 So I can manage my finance.  
